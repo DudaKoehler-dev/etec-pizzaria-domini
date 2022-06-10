@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./pagina-pedido.css">
+	<link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+	<script src="./script.js" defer></script>
+	<title>Pizzaria Domini - Pedido</title>
+</head>
+
+<body>
+	<main>
+
+		<form action="../pagina-pagamento/index.html">
+			<table class="main">
+				<tr>
+
+					<td colspan="2">
+
+						<span> « <a class="home-link" href="../home.html">Voltar para a página inicial</a></span>
+
+					</td>
+
+				</tr>
+
+
+				<tr>
+					<td><img src="../img/logo.png" alt="" class="logo"></td>
+					<td>
+						<h1 class="title">Domini Pizzaria</h1>
+					</td>
+				</tr>
+
+
+				<tr>
+
+					<td colspan="2">
+						<fieldset>
+							<legend>Contato</legend>
+							<table>
+								<tr>
+									<td class="label-wrapper">
+										<label for="i-nome">Nome:</label><br>
+										<label for="i-tel">Telefone:</label><br>
+										<label for="i-adress">Endereço:</label>
+									</td>
+									<td class="input-wrapper">
+										<input type="text" name="i-nome" id="i-nome" required>
+										<input type="text" name="i-tel" id="i-tel" required>
+										<input type="text" name="i-adress" id="i-adress" required>
+									</td>
+								</tr>
+							</table>
+						</fieldset>
+					</td>
+
+				</tr>
+				<tr>
+					<td colspan="2">
+						<fieldset>
+							<legend>Tipos de pizza</legend>
+							<span>
+								<input type="radio" name="pizza-size" value="Pequena (R$ 40,00)">
+								<label for="pizza-size">Pequena (R$ 40,00)</label>
+							</span>
+							<span>
+								<input type="radio" name="pizza-size" value="Média (R$ 50,00)">
+								<label for="pizza-size">Média (R$ 50,00)</label>
+							</span>
+							<span>
+								<input type="radio" name="pizza-size" value="Grande (R$ 60,00)">
+								<label for="pizza-size">Grande (R$ 60,00)</label>
+							</span>
+						</fieldset>
+					</td>
+				</tr>
+			<tr>
+					<td>
+						<section class="aviso aviso-full-width">
+							<p class="aviso__content aviso-full-width">
+								Para mais de uma pizza, peça-as em pedidos diferentes ou acesse o nosso Whatsapp! (14) 7777-7777
+							</p>
+						</section>
+					</td>
+				</tr>
+
+				<tr>
+
+					<td colspan="2">
+						<fieldset>
+							<legend>Tipos de recheio:</legend>
+							<table>
+								<tr>
+									<td class="table-col">
+
+										<h3>Salgados: </h3>
+										<span class="flex">
+											<input type="checkbox" name="pizza-flavor" value="Tradicional">
+											<label for="pizza-flavor">Tradicional</label>
+										</span>
+										<span class="flex">
+											<input type="checkbox" name="pizza-flavor" value="Quatro queijos">
+											<label for="pizza-flavor">Quatro queijos</label>
+										</span>
+										<span class="flex">
+											<input type="checkbox" name="pizza-flavor" value="Calabresa">
+											<label for="pizza-flavor">Calabresa</label>
+										</span>
+										<span class="flex">
+											<input type="checkbox" name="pizza-flavor" value="Peperonni">
+											<label for="pizza-flavor">Peperonni</label>
+										</span>
+										<span class="flex">
+											<input type="checkbox" name="pizza-flavor" value="Gorgonzola com pêra e mel">
+											<label for="pizza-flavor">Gorgonzola com pêra e mel</label>
+										</span>
+										<span class="flex">
+											<input type="checkbox" name="pizza-flavor" value="Palmito">
+											<label for="pizza-flavor">Palmito</label>
+										</span>
+										<span class="flex">
+											<input type="checkbox" name="pizza-flavor" value="Frango com Catupiry">
+											<label for="pizza-flavor">Frango com Catupiry</label>
+										</span>
+										<span class="flex">
+											<input type="checkbox" name="pizza-flavor" value="Bacon">
+											<label for="pizza-flavor">Bacon</label>
+										</span>
+									</td>
+									<td class="table-sm-col">
+										<h3>Doces: </h3>
+										<span class="flex">
+											<input type="checkbox" name="pizza-flavor" value="Chocolate belga">
+											<label for="pizza-flavor">Chocolate belga</label>
+										</span>
+										<span class="flex">
+											<input type="checkbox" name="pizza-flavor" value="Gargamel">
+											<label for="pizza-flavor">Gargamel</label>
+										</span>
+										<span class="flex">
+											<input type="checkbox" name="pizza-flavor" value="Romeu e Julieta">
+											<label for="pizza-flavor">Romeu e Julieta</label>
+										</span>
+										<span class="flex">
+											<input type="checkbox" name="pizza-flavor" value="Torta de Banana">
+											<label for="pizza-flavor">Torta de Banana</label>
+										</span>
+									</td>
+								</tr>
+							</table>
+						</fieldset>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<fieldset>
+							<legend>Acompanhamentos: </legend>
+							<section class="wrapper">
+								<section class="col">
+									<span class="flex">
+										<input type="checkbox" name="pizza-extra" id="pizza-extra" value="Queijo (R$ 4,00)">
+										<label for="pizza-extra">Queijo (R$ 4,00)</label>
+									</span>
+									<span class="flex">
+										<input type="checkbox" name="pizza-extra" id="pizza-extra" value="Bacon (R$ 5,00)">
+										<label for="pizza-extra">Bacon (R$ 5,00)</label>
+									</span>
+									<span class="flex">
+										<input type="checkbox" name="pizza-extra" id="pizza-extra" value="Cheddar (R$ 10,00)">
+										<label for="pizza-extra">Cheddar (R$ 10,00)</label>
+									</span>
+									<span class="flex">
+										<input type="checkbox" name="pizza-extra" id="pizza-extra" value="Tomate (R$ 3,00)">
+										<label for="pizza-extra">Tomate (R$ 3,00)</label>
+									</span>
+								</section>
+								<section class="col">
+									<span class="flex">
+										<input type="checkbox" name="pizza-extra" id="pizza-extra" value="Cebola (R$ 3,00)">
+										<label for="pizza-extra">Cebola (R$ 3,00)</label>
+									</span>
+									<span class="flex">
+										<input type="checkbox" name="pizza-extra" id="pizza-extra" value="Catupiry (R$ 10,00)">
+										<label for="pizza-extra">Catupiry (R$ 10,00)</label>
+									</span>
+									<span class="flex">
+										<input type="checkbox" name="pizza-extra" id="pizza-extra" value="Granulado (R$ 4,00)">
+										<label for="pizza-extra">Granulado (R$ 4,00)</label>
+									</span>
+									<span class="flex">
+										<input type="checkbox" name="pizza-extra" id="pizza-extra" value="Cereja (R$ 7,00)">
+										<label for="pizza-extra">Cereja (R$ 7,00)</label>
+									</span>
+								</section>
+							</section>
+						</fieldset>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+						<fieldset>
+							<legend>Bebidas:</legend>
+							<span class="flex">
+								<input type="checkbox" name="bebida" id="" value="Coca-Cola 1,5L (R$ 5,50)">
+								<label for="bebida"> Coca-Cola 1,5L (R$ 5,50)</label>
+							</span>
+							<span class="flex">
+								<input type="checkbox" name="bebida" id="" value="Guaraná Antártica 1,5L (R$ 5,50)">
+								<label for="bebida"> Guaraná Antártica 1,5L (R$ 5,50)  </label>
+							</span>
+							<span class="flex">
+								<input type="checkbox" name="bebida" id="" value="Sucos Naturais  500ml (R$ 6,00)">
+								<label for="bebida"> Sucos Naturais  500ml (R$ 6,00)</label>
+							</span>
+							<span class="flex">
+								<input type="checkbox" name="bebida" id="" value="Água 500ml (R$ 2,00)">
+								<label for="bebida"> Água 500ml (R$ 2,00) </label>
+							</span>
+							<span class="flex">
+								<input type="checkbox" name="bebida" id="" value="Vinho Garrafa 750ml (R$ 40,00)">
+								<label for="bebida"> Vinho Garrafa 750ml (R$ 40,00) <span class="desc">Consultar disponibilidade</span></label>
+
+								
+							</span>
+
+						</fieldset>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<section class="flex">
+							<h2>Borda recheada? (R$ 4,00)</h2>
+							<input type="radio" name="pizza-border" id="pizza-border" value="Sim">
+							<label for="pizza-border">Sim</label>
+							<input type="radio" name="pizza-border" id="pizza-border" value="Não">
+							<label for="pizza-border">Não</label>
+						</section>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+						<fieldset>
+							<legend>Alguma recomendeção ou observação?</legend>
+							<textarea name="pizza-obs" cols="30" rows="10"></textarea>
+						</fieldset>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<section class="aviso">
+							<p class="aviso__content">
+								Desconto de 20% em pedidos no domingo!
+							</p>
+						</section>
+					</td>
+					<td>
+						<div class="full-width flex">
+							<button type="submit" class="botao-enviar">
+								<a href="../pagina-pagamento/index.html" style="text-decoration: none; color: white;">Enviar pedido!</a>
+							</button>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+
+		<footer>
+			<img src="../img/logo.png" alt="Domini Pizzaria" class="img-logo" />
+			<p>
+			  14 7777-7777 <br />
+			  contato@dominipizzaria.com <br />
+			  Rua Dom Pedro, 101, Jaú - Centro
+			</p>
+		  </footer>
+
+
+	</main>
+
+</body>
+
+</html>

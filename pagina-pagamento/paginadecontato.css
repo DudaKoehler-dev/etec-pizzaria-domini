@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500;600&display=swap');
+
+body {
+  background-color: rgb(255, 255, 255);
+  background-image: url(../img/pizza-bg.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  background-attachment: fixed;
+
+}
+
+h1, h2, h3, h4, h5, h6, legend {
+	font-family: 'Bitter', serif;
+}
+
+
+p, a {
+	font-family: 'Roboto', sans-serif;
+	color: black;
+}
+
+a.link-voltar::before {
+	content: "« ";
+}
+
+legend {
+	font-size: 1.75rem;
+}
+
+main {
+	background-color: white;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	width: fit-content;
+	margin: auto;
+	-webkit-box-shadow: 2px 3px 21px 9px rgba(0,0,0,0.07); 
+	box-shadow: 2px 3px 21px 9px rgba(0,0,0,0.07);
+}
+
+p {
+  font-size: 2rem;
+  text-align: center;
+}

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500;600&display=swap');
+
+
+body{
+    background-image: url(../img/pizza-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	display: flex;
+	justify-content: center;
+	background-attachment: fixed;
+
+	font-size: 1.25rem;
+
+}
+
+main {
+	padding: 1rem;
+	background-color: white;
+	width: fit-content;
+	border-radius: 0.5rem;
+	width: min(90%, 900px);
+}
+
+input {
+    width: 54px;
+    height: 30px;
+}
+
+h1 , h2 ,h3 {
+	font-family: 'Bitter', serif;
+	font-weight: bold ;
+}
+table {
+width: 100%;
+margin: auto;
+background-color: white;
+}
+
+.metade {
+    width: 50%;
+}
+
+input#input-1 {
+    width: 99%;
+}
+
+a::before {
+	content: "« ";
+}
+
+p {
+	font-family: 'Bitter', serif;
+}
+
+a {
+	font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Bitter', serif;
+	font-weight: bold ;
+    font-size: 25px;
+}
+
+button {
+    margin: auto;
+    display: block;
+}
+
+img.img-cartao {
+    margin: auto;
+}
+
+p.button {
+    background-color: rgb(49, 0, 0);
+    padding: 1rem;
+    color: white;
+    margin: auto;
+    width: 7rem;
+}
+
+fieldset.flex {
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+}
+
+tr.tr-center {
+	display: flex;
+	justify-content: center;
+	gap: 4rem;
+}
+
+a.voltar-link {
+	color: black;
+
+}
+
+footer {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: rgb(95, 0, 0);
+	color: white;
+	border-radius: 0.5rem;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+footer p {
+	font-size: 1rem;
+}
+
+img.img-logo {
+	width: 10rem;
+	height: 10rem;
+	border-radius: 100%;
+}
+
+summary::marker {
+    color: white;
+}
+
+details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+details > img {
+	margin: auto;
+}
+
+tr:hover { 
+	background-color:rgb(243, 243, 243);
+	transition: 0.5s;
+}

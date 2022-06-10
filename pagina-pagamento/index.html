@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pagamento.css" />
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon" />
+    <title>Pizzaria Domini - Pagamento</title>
+  </head>
+  <body>
+    <main>
+      <table>
+        <tr>
+          <td colspan="2">
+            <h1>Página de pagamento</h1>
+            <a href="../pagina-pedido/pagina-pedido.html" class="voltar-link"
+              >Voltar para a Página de Pedido</a
+            >
+            <hr />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <fieldset class="flex">
+              <legend><h2>Como Você Deseja Receber o produto?</h2></legend>
+              <div class="row">
+                <p>Delivery</p>
+                <input type="radio" name="pagamento"/>
+              </div>
+              <div class="row">
+                <p>Retirada</p>
+                <input type="radio" name="pagamento" />
+              </div>
+            </fieldset>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <fieldset>
+              <legend><p>Qual o seu endereço?</p></legend>
+              <h3>Rua:</h3>
+              <input type="text" name="t-local" id="input-1" />
+              <h3>Bairro:</h3>
+              <input type="text" name="t-local" id="input-1" />
+              <h3>Número:</h3>
+              <input type="number" name="t-local" id="input-1" />
+            </fieldset>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <hr />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Qual a forma de pagamento:</p>
+          </td>
+        </tr>
+        <tr class="tr-center">
+          <td>
+            <h3>Crédito</h3>
+            <input type="radio" name="cartão/bandeira" />
+          </td>
+          <td>
+            <h3>Débito</h3>
+            <input type="radio" name="cartão/bandeira" />
+          </td>
+          <td>
+            <h3>PIX</h3>
+            <input type="radio" name="cartão/bandeira" />
+          </td>
+          <td>
+            <h3>Dinheiro</h3>
+            <input type="radio" name="cartão/bandeira" />
+          </td>
+        </tr>
+        <tr class="tr-center"></tr>
+        <tr>
+          <td>
+            <img src="../img/cartoes-credito.png" alt="" class="img-cartao" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <details>
+              <summary><p class="button">Finalizar Pedido</p></summary>
+              <img src="../img/delivery.gif" alt="" />
+              <p>Seu pedido vai chegar ou ficar pronto em, no máximo, 1h!</p>
+            </details>
+          </td>
+        </tr>
+      </table>
+      <footer>
+        <img src="../img/logo.png" alt="Domini Pizzaria" class="img-logo" />
+        <p>
+          14 7777-7777 <br />
+          contato@dominipizzaria.com <br />
+          Rua Dom Pedro, 101, Jaú - Centro
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
